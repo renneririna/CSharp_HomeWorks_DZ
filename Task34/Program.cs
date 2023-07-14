@@ -6,7 +6,7 @@
 
 Console.Clear();
 Console.Write("Введите длину массива: ");
-int len = int.Parse(Console.ReadLine());
+int len = int.Parse(Console.ReadLine() ??"");
 int[] array = new int[len];
 FillArray(array, 100, 999); 
 Console.Write("Массив: ");

@@ -7,7 +7,7 @@
 
 Console.Clear();
 Console.Write("Введите длину массива: ");
-int len = int.Parse(Console.ReadLine());
+int len = int.Parse(Console.ReadLine() ??"");
 double[] array = new double[len];
 FillArray(array, -10, 99);
 Console.Write("Массив: ");
